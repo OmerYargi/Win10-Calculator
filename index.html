@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f69414863.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top_bar">
+            <div class="header">
+                <p>Hesap Makinesi</p>
+            </div>
+            <div class="window_btn">
+                <i class="fa-solid fa-window-minimize"></i>
+                <i class="fa-solid fa-window-maximize"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="secondary_bar">
+            <div class="burger_type">
+                <div class="burger_class">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </div>
+                <div class="type">
+                    <div><h3>Standart</h3></div>
+                </div>
+            </div>
+            <div class="burgerforhistory">
+                <i class="fa-solid fa-clock-rotate-left" onclick="gizleGoster()" id="history"></i>
+                    <div id="sideHistory">
+                        <h3 class="sideHistoryHeader"><span>Geçmiş</span>  &emsp; Bellek</h3>
+                        <p>Henüz geçmiş yok</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </div>
+        </div>
+
+
+        <div class="screen_bar">
+            <input type="text" class="ekran1">
+        </div>
+
+        <div id="bottomHistory" style="display: none;">
+            <p style="font-weight: bold;">Henüz geçmiş yok.</p>
+        </div>
+
+        <div class="ram_bar">
+            <p class="ram_btn passive">MC</p>
+            <p class="ram_btn passive">MR</p>
+            <p class="ram_btn">M+</p>
+            <p class="ram_btn">M-</p>
+            <p class="ram_btn">MS</p>
+            <p class="ram_btn passive">M</p>
+        </div>
+
+        <div class="btn_bar">
+            <button id="percntOpt" value="&percnt;">&percnt;</button>
+            <button class="clearLine">CE</button>
+            <button class="clearAll">C</button>
+            <button class="clearLast">Sil</button>
+            
+            <button class="divideOneOpt" value=""><sub>1</sub> / <sup>x</sup></button>
+            <button class="powOpt" value="&#x000B2;">x <sub>2</sub></button>
+            <button class="sqrtOpt" value="&Sqrt;">&Sqrt;</button>
+            <button class="btnOperator" value="/">&divide;</button>
+           
+            <button class="nmb" value="7">7</button>
+            <button class="nmb" value="8">8</button>
+            <button class="nmb" value="9">9</button>
+            <button class="btnOperator" value="&#x0002A;">&#x0002A;</button>
+            
+            <button class="nmb" value="4">4</button>
+            <button class="nmb" value="5">5</button>
+            <button class="nmb" value="6">6</button>
+            <button class="btnOperator" value="-">-</button>
+            
+            <button class="nmb" value="1">1</button>
+            <button class="nmb" value="2">2</button>
+            <button class="nmb" value="3">3</button>
+            <button class="btnOperator" value="+">+</button>
+            
+            <button class="absOpt" value="&#x000B1;" style="background-color: black;">&#x000B1;</button>
+            <button class="nmb" value="0">0</button>
+            <button class="nmb" value=".">.</button>
+            <button class="equal" value="=" style=" background-color: rgb(20, 74, 156);">=</button>
+        </div>
+    </div>
+</body>
+</html>
